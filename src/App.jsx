@@ -1,6 +1,7 @@
 
 import './App.css'
 import Cover from './components/Cover'
+import Footer from './components/Footer'
 import Main from './components/Main'
 import Navbar from './components/Navbar'
 
@@ -17,7 +18,8 @@ function App() {
      </header>
 
     <Main></Main>
-
+    
+    <Footer></Footer>
      
     </div>
   )
