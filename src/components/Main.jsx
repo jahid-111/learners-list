@@ -12,11 +12,7 @@ const Main = () => {
     return (
         <div className="bg-gray-950">
             <Search></Search>
-            <Students></Students>
-
-
-
-                
+            <Students></Students>       
         </div>
     );
 };

@@ -6,8 +6,8 @@
 
 const Search = () => {
     return (
-        <div className=" py-10 flex flex-col justify-center items-center">
-            <div className=" my-5">
+        <div className=" py-5 flex flex-col justify-center items-center">
+            <div className=" mb-5">
                 <h2 className=" text-3xl sm:text-5xl font-semibold text-white text-center"> 
                     <span className=" text-green-500">Students </span>
                      Of the Year
