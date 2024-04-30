@@ -9,7 +9,7 @@ const Cover = () => {
     return (
         <div className=" w-11/12 mx-auto py-3 sm:flex sm:flex-row-reverse justify-evenly items-center  ">
            <img
-                className=" sm:w-6/12 sm:h-[550px]"
+                className=" sm:w-6/12 sm:h-[550px] animate-bounce ......"
                      src="https://static.vecteezy.com/system/resources/previews/025/003/261/original/cute-cartoon-boy-student-character-on-transparent-background-generative-ai-png.png" alt="" />
 
             <div className=" sm:w-6/12 ">

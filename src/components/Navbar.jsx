@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <div className=" flex  h-24 justify-between items-center">
             <section className=" flex justify-center items-center gap-2">
-                <img className=" border-4 p-2 border-teal-400 h-16 w-16  rounded-full" src="https://www.pngall.com/wp-content/uploads/2018/04/School.png" alt="" />  
+                <img className=" border-4 p-2 border-green-600 h-16 w-16  rounded-full" src="https://www.pngall.com/wp-content/uploads/2018/04/School.png" alt="" />  
                 <h3 className=" font-semibold text-white">
                     Learn <br /> 
                     With Sumith

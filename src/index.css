@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.animate-bounce {
+    animation: bounce 9.100s infinite; /* Adjust speed of bounce */
+  }
+
+
+  @keyframes bounce {
+  0%, 100% {
+    transform: translateY(38px);
+  }
+  50% {
+    transform: translateY(0px); /* Adjust height of bounce */
+  }
+}
