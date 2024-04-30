@@ -24,12 +24,12 @@ const Students = () => {
         <section className=' '>
             {/* Raanked Students */}
             <div className=' '>
-                <table className=' px-3 text-center  border border-red-400 py-24 w-full sm:w-6/12 mx-auto'>
+                <table className=' px-3 text-center   py-24 w-full sm:w-6/12 mx-auto'>
                     <thead className='  '>
-                        <tr className=' font-bold px-3   text-gray-800'>
-                            <td className=' py-2 border-2 bg-green-400 border-gray-300 w-16'>ID</td>
-                            <td className=' py-2 border-2 bg-green-400 border-gray-300 w-60'>Name</td>
-                            <td className=' py-2 border-2 bg-green-400 border-gray-300 w-24'>Scores</td>
+                    <tr className='  font-bold bg-slate-950 text-xxl border-b px-3 text-white'>
+                            <td className=' py-4 w-16'>ID</td>
+                            <td className=' py-4 w-60'>Name</td>
+                            <td className=' py-4 w-24'>Scores</td>
                         </tr>
                     </thead>
 
@@ -37,11 +37,11 @@ const Students = () => {
                         {
                             rankedStudents.map(topStudent => 
                                 <tr 
-                                   className=' border font-semibold'
+                                   className=' border-b border-gray-400 text-gray-300 font-semibold'
                                     key={topStudent.ID}>
-                                        <td className=' bg-gradient-to-r from-yellow-200  bg-gray-300 border border-gray-400 py-2'>*{topStudent.ID}</td>
-                                        <td className=' bg-gradient-to-r from-yellow-200  bg-gray-300 border border-gray-400 py-2'>{topStudent.Name}</td>
-                                        <td className=' bg-gradient-to-r from-yellow-200  bg-gray-300 border border-gray-400 py-2'>{topStudent.Percentage}%</td>
+                                        <td className='   py-2'>*{topStudent.ID}</td>
+                                        <td className='   py-2'>{topStudent.Name}</td>
+                                        <td className='   py-2'>{topStudent.Percentage}%</td>
                                 </tr>
                         )}
                     </tbody>
@@ -49,26 +49,25 @@ const Students = () => {
             </div>
 
             {/* dueStudents */}
-            <div className=' '>
-                <table className=' px-3 text-center  border border-red-400 py-24 w-full sm:w-6/12 mx-auto'>
-                    <thead className='  '>
-                        <tr className=' font-bold text-gray-800'>
-                            <td className=' py-2 border-2 bg-green-400 border-gray-100 w-16'>ID</td>
-                            <td className=' py-2 border-2 bg-green-400 border-gray-100 w-60'>Name</td>
-                            <td className=' py-2 border-2 bg-green-400 border-gray-100 w-24'>Scores</td>
+            <div className=' mt-3 '>
+                <table className=' px-3 text-center  border-b py-24 w-full sm:w-6/12 mx-auto'>
+                <thead>
+                        <tr className='  font-bold bg-slate-950 text-xxl border-b px-3 text-white'>
+                            <td className=' py-4 w-16'>ID</td>
+                            <td className=' py-4 w-60'>Name</td>
+                            <td className=' py-4 w-24'>Scores</td>
                         </tr>
-                    </thead>
-
+                </thead>
                     <tbody>
                         {
-                            dueStudents.map(topStudent => 
+                            dueStudents.map(dueStudent => 
                                 <tr 
-                                   className=' border border-green-400 font-semibold'
-                                    key={topStudent.ID}>
-                                        <td className=' bg-gray-300 border border-gray-00 py-2'>{topStudent.ID}</td>
-                                        <td className=' bg-gray-300 border border-gray-00 py-2'>{topStudent.Name}</td>
-                                        <td className=' bg-gray-300 border border-gray-00 py-2'>{topStudent.Percentage}%</td>
-                                </tr>
+                                className=' border-b border-gray-400 text-gray-300 font-semibold'
+                                 key={dueStudent.ID}>
+                                     <td className='py-2'>{dueStudent.ID}</td>
+                                     <td className='py-2'>{dueStudent.Name}</td>
+                                     <td className='py-2'>{dueStudent.Percentage}%</td>
+                             </tr>
                         )}
                     </tbody>
                 </table>

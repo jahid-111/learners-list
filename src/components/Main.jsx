@@ -10,7 +10,7 @@ import Students from "./Students";
 
 const Main = () => {
     return (
-        <div className="bg-gray-950">
+        <div className="bg-gray-800">
             <Search></Search>
             <Students></Students>       
         </div>
