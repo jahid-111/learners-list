@@ -1,6 +1,7 @@
 
 import './App.css'
 import Cover from './components/Cover'
+import Main from './components/Main'
 import Navbar from './components/Navbar'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Cover></Cover>
      </header>
 
+    <Main></Main>
 
      
     </div>
